@@ -4,11 +4,11 @@ A premium, high-performance digital portfolio designed to showcase modern web en
 
 ![Portfolio Preview](public/preview.png) *(Note: Add a high-quality preview image in the public folder)*
 
-## 🚀 Vision
+## Vision
 
 This project transcends traditional web design by merging complex backend logic with ethereal, front-end visual experiences. It’s engineered for those who demand more than just a website—they demand a digital presence that resonates.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Core**: [React 19](https://react.dev/) & [Vite 8](https://vitejs.dev/)
 - **Animations**: [GSAP](https://gsap.com/) (GreenSock Animation Platform)
@@ -16,7 +16,7 @@ This project transcends traditional web design by merging complex backend logic 
 - **Visuals**: WebGL & Interactive Particle Systems
 - **Styling**: Vanilla CSS with a focus on Grid/Flexbox and Glassmorphism
 
-## ✨ Key Features
+## Key Features
 
 - **Fluid Motion**: Integrated Lenis for a cohesive, inertia-based scrolling experience throughout the application.
 - **Narrative Reveal**: Scroll-triggered GSAP animations that reveal content with precision and elegance.
@@ -24,7 +24,7 @@ This project transcends traditional web design by merging complex backend logic 
 - **Glassmorphism UI**: A consistent design language utilizing blurred backdrops and subtle borders for a modern, premium feel.
 - **Adaptive Performance**: Highly optimized for speed and fully responsive across all screen dimensions.
 
-## 📂 Featured Projects
+## Featured Projects
 
 ### [TrenchKidd](https://github.com/goim-ved/trenchkidd)
 > **High-End E-commerce Platform**
@@ -36,7 +36,7 @@ This project transcends traditional web design by merging complex backend logic 
 > A comprehensive tool for solo brokers, enabling efficient property management and high-performance search capabilities.
 > **Tech**: MERN, PostgreSQL, Cloudinary
 
-## 🛠️ Local Development
+## Local Development
 
 Follow these steps to get the environment set up on your local machine:
 
@@ -57,10 +57,10 @@ Follow these steps to get the environment set up on your local machine:
    npm run dev
    ```
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-Built with 🖤 by [Vedant Ajit Goim](https://github.com/goim-ved)
+Built by [Vedant Ajit Goim](https://github.com/goim-ved)
