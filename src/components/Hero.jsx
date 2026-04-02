@@ -38,7 +38,7 @@ const Hero = () => {
     <section id="home" className="hero-section" ref={containerRef}>
       <div className="container hero-container">
         <div className="hero-content">
-          <p className="greeting reveal-item">Hi, my name is Vedant Ajit Goim</p>
+          <p className="greeting reveal-item">Hi, my name is <span className="highlight-name">Vedant Ajit Goim</span></p>
           <h1 className="name reveal-item">A Full-Stack <span>Developer.</span></h1>
           <p className="bio reveal-item">
             I craft scalable web solutions and digital experiences tailored for 
@@ -77,11 +77,19 @@ const Hero = () => {
         }
 
         .greeting {
-          color: var(--accent);
+          color: var(--text-secondary);
           font-family: var(--font-main);
           font-weight: 500;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
           font-size: 1.1rem;
+        }
+
+        .highlight-name {
+          color: var(--accent);
+          font-size: 1.65rem;
+          font-weight: 700;
+          display: block;
+          margin-top: 0.5rem;
         }
 
         .name {

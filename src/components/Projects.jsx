@@ -9,16 +9,16 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Enterprise AI Dashboard',
-      description: 'A comprehensive full-stack solution featuring a custom-built intelligent recommendation engine and high-performance real-time data visualization.',
-      tech: ['MERN', 'Python', 'Machine Learning'],
+      title: 'TrenchKidd',
+      description: 'A high-end e-commerce platform for a premium clothing brand, featuring seamless shopping experiences with immersive WebGL visuals and fluid Framer Motion transitions.',
+      tech: ['MERN', 'WebGL', 'Framer Motion'],
       links: { github: '#', external: '#' },
       image: project1
     },
     {
-      title: 'Decentralized Exchange UI',
-      description: 'A robust Web3 application allowing users to interact with smart contracts seamlessly while visualizing complex blockchain data metrics in real-time.',
-      tech: ['React', 'Web3.js', 'Rust'],
+      title: 'EstateEdge',
+      description: 'A comprehensive real estate marketplace designed for a solo broker, enabling efficient property management, lead tracking, and high-performance search.',
+      tech: ['MERN', 'PostgreSQL', 'Cloudinary'],
       links: { github: '#', external: '#' },
       image: project2
     },
@@ -63,18 +63,18 @@ const Projects = () => {
       const containers = gsap.utils.toArray('.project-image-container');
       containers.forEach((container) => {
         const img = container.querySelector('.project-img');
-        
+
         container.addEventListener('mousemove', (e) => {
           const { left, top, width, height } = container.getBoundingClientRect();
           const x = e.clientX - left;
           const y = e.clientY - top;
-          
+
           const centerX = width / 2;
           const centerY = height / 2;
-          
+
           const rotateX = ((y - centerY) / centerY) * -10; // Max 10 degrees
           const rotateY = ((x - centerX) / centerX) * 10;
-          
+
           gsap.to(container, {
             rotateX: rotateX,
             rotateY: rotateY,
@@ -118,28 +118,28 @@ const Projects = () => {
     <section id="projects" ref={sectionRef}>
       <div className="container">
         <h2 className="section-title"><span>03.</span> Featured Work</h2>
-        
+
         <div className="projects-stack">
           {projects.map((project, index) => (
             <div className="project-row" key={index}>
               <div className="project-image-container glass-card">
                 <img src={project.image} alt={project.title} className="project-img" />
               </div>
-              
+
               <div className="project-info">
                 <p className="project-overline">Featured Project</p>
                 <h3 className="project-title">{project.title}</h3>
-                
+
                 <div className="project-desc glass-card">
                   <p>{project.description}</p>
                 </div>
-                
+
                 <ul className="project-tech">
                   {project.tech.map((tech, i) => (
                     <li key={i}>{tech}</li>
                   ))}
                 </ul>
-                
+
                 <div className="project-links">
                   <a href={project.links.github} className="btn-icon">GitHub</a>
                   <a href={project.links.external} className="btn-icon">Visit Live ↗</a>

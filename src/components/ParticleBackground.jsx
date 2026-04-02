@@ -26,7 +26,7 @@ const ParticleBackground = () => {
                 this.y = Math.random() * canvas.height;
                 this.vx = (Math.random() - 0.5) * 0.5; // Slow, sleek motion
                 this.vy = (Math.random() - 0.5) * 0.5;
-                this.radius = Math.random() * 1.5 + 0.5;
+                this.radius = Math.random() * 2.25 + 0.75;
             }
 
             update() {
@@ -85,8 +85,8 @@ const ParticleBackground = () => {
                         ctx.beginPath();
                         ctx.moveTo(p.x, p.y);
                         ctx.lineTo(p2.x, p2.y);
-                        ctx.strokeStyle = `rgba(34, 197, 94, ${opacity * 0.2})`; // Low opacity for sleeker look
-                        ctx.lineWidth = 0.5;
+                        ctx.strokeStyle = `rgba(34, 197, 94, ${opacity * 0.35})`; // Balanced opacity
+                        ctx.lineWidth = 1.1;
                         ctx.stroke();
                     }
                 }
@@ -102,8 +102,8 @@ const ParticleBackground = () => {
                         ctx.beginPath();
                         ctx.moveTo(p.x, p.y);
                         ctx.lineTo(mouseRef.current.x, mouseRef.current.y);
-                        ctx.strokeStyle = `rgba(34, 197, 94, ${mOpacity * 0.3})`;
-                        ctx.lineWidth = 0.5;
+                        ctx.strokeStyle = `rgba(34, 197, 94, ${mOpacity * 0.45})`;
+                        ctx.lineWidth = 1.1;
                         ctx.stroke();
                     }
                 }
