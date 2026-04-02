@@ -2,7 +2,7 @@
 
 A premium, high-performance digital portfolio designed to showcase modern web engineering and sophisticated UI/UX. Built with a focus on visual excellence, fluid animations, and interactive storytelling.
 
-![Portfolio Preview](public/preview.png) *(Note: Add a high-quality preview image in the public folder)*
+![Portfolio Preview](public/preview2.png) *(Note: Add a high-quality preview image in the public folder)*
 
 ## Vision
 
