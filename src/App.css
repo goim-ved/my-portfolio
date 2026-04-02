@@ -1,0 +1,12 @@
+/* Specific styles for App components will go here if needed.
+   Most foundational utilities are in index.css */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
