@@ -42,17 +42,24 @@ const Services = () => {
       });
 
       // Reveal Cards
-      gsap.from('.service-card', {
-        scrollTrigger: {
-          trigger: '.services-grid',
-          start: 'top 85%',
+      gsap.fromTo('.service-card', 
+        { 
+          y: 40, 
+          opacity: 0 
         },
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: 'power3.out'
-      });
+        {
+          y: 0,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: '.services-grid',
+            start: 'top 85%',
+          },
+          duration: 0.8,
+          stagger: 0.1,
+          ease: 'power3.out',
+          clearProps: "all"
+        }
+      );
     }, sectionRef);
 
     return () => ctx.revert();
@@ -86,6 +93,8 @@ const Services = () => {
           flex-direction: column;
           align-items: flex-start;
           height: 100%;
+          opacity: 0;
+          transform: translateY(20px);
         }
 
         .service-icon {
