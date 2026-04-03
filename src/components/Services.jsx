@@ -57,7 +57,9 @@ const Services = () => {
           duration: 0.8,
           stagger: 0.1,
           ease: 'power3.out',
-          clearProps: "all"
+          onComplete: (self) => {
+            gsap.set('.service-card', { clearProps: "transform" });
+          }
         }
       );
     }, sectionRef);
@@ -93,8 +95,6 @@ const Services = () => {
           flex-direction: column;
           align-items: flex-start;
           height: 100%;
-          opacity: 0;
-          transform: translateY(20px);
         }
 
         .service-icon {
