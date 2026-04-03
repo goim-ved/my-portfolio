@@ -6,14 +6,14 @@ const About = () => {
   const sectionRef = useRef(null);
   
   const skills = [
-    { name: 'MERN', percentage: '95%' },
-    { name: 'Python Backend Systems', percentage: '90%' },
-    { name: 'Machine Learning', percentage: '75%' },
-    { name: 'Rust Backend', percentage: '50%' },
-    { name: 'Web3 & WebGL', percentage: '75%' },
-    { name: 'PostgreSQL & Databases', percentage: '80%' },
-    { name: 'Web Design & Figma', percentage: '80%' },
-    { name: 'DevOps & CI/CD', percentage: '70%' }
+    { name: 'Full-Stack Architecture (MERN)', percentage: '95%' },
+    { name: 'Scalable Backend Systems (Python)', percentage: '90%' },
+    { name: 'AI & Machine Learning Solutions', percentage: '75%' },
+    { name: 'Systems Engineering (Rust)', percentage: '50%' },
+    { name: 'WebGL & Immersive 3D Tech', percentage: '75%' },
+    { name: 'Advanced Database Design (SQL)', percentage: '80%' },
+    { name: 'Creative Design & UI Architecture', percentage: '80%' },
+    { name: 'Infrastructure & DevOps', percentage: '70%' }
   ];
 
   useEffect(() => {
