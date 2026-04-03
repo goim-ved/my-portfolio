@@ -12,14 +12,14 @@ const Projects = () => {
       title: 'TrenchKidd',
       description: 'A high-end e-commerce platform for a premium clothing brand, featuring seamless shopping experiences with immersive WebGL visuals and fluid Framer Motion transitions.',
       tech: ['MERN', 'WebGL', 'Framer Motion'],
-      links: { github: '#', external: 'https://trenchkidd.vercel.app' },
+      links: { github: '#', external: 'https://trenchkidd.vercel.app', target: '_blank' },
       image: project1
     },
     {
       title: 'EstateEdge',
       description: 'A comprehensive real estate marketplace designed for a solo broker, enabling efficient property management, lead tracking, and high-performance search.',
       tech: ['MERN', 'PostgreSQL', 'Cloudinary'],
-      links: { github: '#', external: '#' },
+      links: { github: '#', external: 'https://6981ab028d16d3a4e66c4ac8--tattva-real-estate.netlify.app/', target: '_blank' },
       image: project2
     },
     {
@@ -142,7 +142,14 @@ const Projects = () => {
 
                 <div className="project-links">
                   <a href={project.links.github} className="btn-icon">GitHub</a>
-                  <a href={project.links.external} className="btn-icon">Visit Live ↗</a>
+                  <a
+                    href={project.links.external}
+                    className="btn-icon"
+                    target={project.links.target || undefined}
+                    rel={project.links.target ? 'noreferrer' : undefined}
+                  >
+                    Visit Live ↗
+                  </a>
                 </div>
               </div>
             </div>
