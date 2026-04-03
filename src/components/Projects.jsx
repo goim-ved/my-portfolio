@@ -12,7 +12,7 @@ const Projects = () => {
       title: 'TrenchKidd',
       description: 'A high-end e-commerce platform for a premium clothing brand, featuring seamless shopping experiences with immersive WebGL visuals and fluid Framer Motion transitions.',
       tech: ['MERN', 'WebGL', 'Framer Motion'],
-      links: { github: '#', external: '#' },
+      links: { github: '#', external: 'https://trenchkidd.vercel.app' },
       image: project1
     },
     {
